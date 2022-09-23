@@ -1,0 +1,406 @@
+*{   
+    font-family: 'calibri', 'segoe ui','Dancing Script', 'Playfair Display', 'cursive', sans-serif;
+    margin: 0;
+}
+
+
+#header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1003;
+  
+    
+}
+main{
+   padding-top: 150px;
+   
+} 
+.logo{
+    width: 250px;
+}
+
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    width: 100%;
+    
+    font-size: 20px;
+    
+    
+}
+
+.menu-horizontal{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  height: 50px;
+
+
+}
+.menu-horizontal > li > a {
+    display: block;
+    padding: 10px 40px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    
+
+
+}
+.menu-horizontal li a:hover{
+    background-color: #e6007fab;
+    color: white;
+   
+
+
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 400;
+    width: 250px;
+    z-index: 1003;
+    
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+    background-color: rgba(204, 204, 204, 0.801);
+    padding: 0 ;
+    
+}
+.menu-vertical li a:hover{
+    background-color: #e6007fab;
+    color: white;
+    
+}
+.menu-vertical li a{
+    display: block;
+    color: black;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+}
+
+/*boton del menu*/
+.nav-toggle {
+    display: none;
+}
+
+
+
+
+
+
+/*links redes sociales*/
+.redes-flotantes{
+    display: flex;
+    justify-content: flex-end;
+     height: 100%;
+}
+#social{
+    z-index: 1001;
+    position: fixed;
+    bottom: 150px;
+    
+    
+}
+
+    
+#iconos_sociales {
+    list-style: none;
+}
+
+
+#social a{
+    display: flex;
+    
+    width: 56px;
+    height: 56px;
+    margin: 8px;
+    border-radius: 4px;
+    background-position: center;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    
+}
+
+#social a:hover{
+    background-size: 40px;
+    box-shadow: 0 0 8px;
+}
+.facebook:hover{
+    background-color: rgba(0, 0, 255, 0.658);
+}
+.instagram:hover{
+    background-color: rgba(248, 4, 236, 0.658);
+}
+.whatsapp:hover{
+    background-color: rgba(2, 177, 2, 0.658);
+}
+.facebook{ background-image: url('../multimedia/imagenes/logos/facebook.png'); }
+.instagram{ background-image: url('../multimedia/imagenes/logos/instagram.png'); }
+.whatsapp{ background-image: url('../multimedia/imagenes/logos/whatsapp.png'); }
+
+
+/*sliders*/
+
+
+#slideshow-principal{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#slideshow{
+    position: relative;
+    z-index: 998;
+    height: 600px;
+}
+
+#slideshow img{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.6;
+    
+}
+#img2{
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+   
+
+}
+.activate{
+    left: 0 !important;
+}
+#indicadores{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    z-index: 999;
+}
+.circles {
+    border: white 2px solid;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin: 0 5px 0 5px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.resaltado{
+    background-color: #E6007E;
+    transition: background-color .8s;
+}
+
+/*Servicios*/
+h1{
+    font-family: 'Dancing Script';
+    font-size: 100px;
+    color: #E6007E;
+    text-align: center;
+    font-weight: 700;
+    
+    
+}
+#servicios{
+    
+    background-color: #F58DC6 ;
+}
+
+
+.secciones-servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+.cartas-servicios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+.cartas-servicios h3, 
+.cartas-servicios p {
+    text-align: center;
+    padding: 10px;
+
+}
+.cartas-servicios p{
+    
+    line-height: 1.5;
+    color: #6a6a6a;
+    
+}
+.cartas-servicios h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    background-color: #e6007f63;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.cartas-servicios h3:hover{
+    opacity: 1;
+}
+
+.cartas-servicios-contenido{
+    display: flex;
+    align-items: flex-end;
+    width: 60%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    cursor: default;
+    transition: all 400ms ease;
+    
+}
+.cartas-servicios-contenido:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+    transform: translateY(-3%);
+}
+.cartas-servicios-contenido img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.boton-servicio{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+    padding-bottom: 10px;
+}
+
+/*Informacion*/
+
+.informacion{
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+    padding-bottom: 10px;
+
+}
+.info-carta{
+display: flex;
+flex-direction: column;
+align-items: center;
+line-height: 1.5;
+text-align: center;
+}
+.info-carta h3{
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    color: #E6007E;
+    text-align: center;
+    font-weight: 700;
+    
+    
+}
+.info-carta h4{
+    font-family: 'Dancing Script';
+    font-weight: 600;
+    font-size: 25px;
+}
+.info-carta img{
+    width: 100%;
+    
+}
+.medios-pago figure{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+}
+
+.medios-pago img{
+    
+    width: 70%;
+}
+
+.horario p{
+    font-family: 'Dancing Script' ;
+    font-weight: 500;
+    font-size: 15px;
+}
+.turno p{
+    
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin: 0;
+   
+    
+}
+
+
+
+/*footer*/
+.map{
+    width:100%;
+    height: 250px;
+    border: none;
+    padding: 10px  10px;
+}
+.footer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    background-color: #F58DC6;
+}
+.footer img{
+    
+    width: 20px;
+    height: 20px;
+    
+}
+.copy{
+    padding: 1rem 1rem 1rem 0;
+    font-weight: bold;
+    color:#333;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

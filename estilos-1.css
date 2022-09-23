@@ -1,0 +1,405 @@
+@media screen and (max-width:768px){
+    
+    
+    main{
+        padding-top: 114px;
+    }
+    .logo{
+        width: 200px;
+        
+    }
+    
+    
+    nav{
+    width: 100%;
+    margin: 0;
+    }
+    
+    .nav-toggle{
+   display: block; 
+   background: none;
+    border: none;
+    font-size: 30px;
+    padding-right: 30px;
+    line-height: 60px; 
+    }
+
+    
+.menu-horizontal{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff8c;
+    position: fixed;
+    z-index: 1000;
+    top: 114px;
+    width: 100%;
+    padding: 20px 0;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 80px;
+    height: calc(100% - 124px);
+    overflow-x: auto;
+    left:100%;
+    transition: left 0.3s;
+}
+.menu-vertical{
+    left: 60%;
+   line-height: 20px;
+    
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+    
+    
+}
+    
+.nav-menu_visible{
+        left: 0;
+        
+    }
+
+    #slideshow{
+        height: 500px;
+    }
+    #indicadores{
+         bottom: 15px;
+        
+    }
+    .circles {
+        border: white 1.5px solid;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    
+    
+    /*links redes sociales*/
+    .redes-flotantes{
+        height: 100%;
+        justify-content: center;
+    }
+    #social{
+        position: static;
+    }
+    
+        
+    #iconos_sociales {
+        display: flex;
+        justify-content: center;
+       
+    }
+    
+    
+    #social a{
+        display: flex;
+        width: 80px;
+        margin: 8px;
+        
+        background-position: center;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        
+    }
+    
+    #social a:hover{
+        background-size: 40px;
+        box-shadow: 0 0 0px;
+        
+    }
+    .facebook:hover{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .instagram:hover{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .whatsapp:hover{
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .facebook{ background-image: url('../multimedia/imagenes/logos/facebook.svg'); }
+    .instagram{ background-image: url('../multimedia/imagenes/logos/instagram.svg'); }
+    .whatsapp{ background-image: url('../multimedia/imagenes/logos/whatsapp.svg'); }
+    
+
+    
+    
+    /*Servicios*/
+    #servicios{
+        width: 100%;
+        background-color: #F58DC6 ;
+    }
+    h1{
+        font-family: 'Dancing Script';
+        font-size: 80px;
+        color: #E6007E;
+        text-align: center;
+        font-weight: 700;
+        
+        
+    }
+    h2{
+        font-family: 'Dancing Script';
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+        font-weight: 400;
+       
+    
+    }
+    
+    .secciones-servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .cartas-servicios{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        
+    }
+    .cartas-servicios h3, 
+    .cartas-servicios p {
+        text-align: center;
+        padding: 10px;
+    
+    }
+    .cartas-servicios p{
+        line-height: 1;
+        color: #6a6a6a;
+    }
+    .cartas-servicios h3{
+        font-weight: 500;
+    }
+    .cartas-servicios h3{
+        height: 15%;
+        background-color: #e6007f63;
+        font-size: 15px;
+        opacity: 1;
+    }
+    .cartas-servicios-contenido{
+        width: 70%;
+       
+        margin: 15px;
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+       
+        
+    }
+    .cartas-servicios-contenido:hover{
+        transform: none;
+    }
+    .cartas-servicios-contenido img{
+        width: 100%;
+        height: 210;
+    }
+    /*Informacion*/
+    .informacion{
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+        padding-bottom: 10px;
+    
+    }
+        
+    
+    
+    .info-carta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5;
+    text-align: center;
+    
+    }
+    .info-carta h3{
+        font-family: 'Dancing Script';
+        font-size: 40px;
+        color: #E6007E;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        
+    }
+    .info-carta h4{
+        font-family: 'Dancing Script' ;
+        font-weight: 700;
+        font-size: 20px;
+        
+    }
+    .horario p{
+        font-family: 'Dancing Script' ;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    
+    .info-carta img{
+        width: 70%;
+        
+    }
+    .medios-pago img{
+        width: 70%;
+    }
+    .turno img{
+        width: 70%;
+    }
+    .turno p{
+        font-weight: 600;
+        width: 100%;
+        align-items: center;
+       
+    }
+    .turno{
+        margin: 0;
+    }
+    /*footer*/
+    .map{
+        width:100%;
+        height: 230px;
+        
+    }
+    
+    
+}
+@media screen and (max-width:650px){
+    
+    .nav-contenido{
+            
+            margin-right: 20px;
+    }
+    .nav-toggle{
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding-right: 30px;
+    line-height: 60px; 
+    }
+    main{
+        padding-top: 114px;
+    }
+    .logo{
+        width: 150px;
+        
+    }
+    
+    h1{
+        font-family: 'Dancing Script';
+        font-size: 60px;
+        color: #E6007E;
+        text-align: center;
+        font-weight: 700;
+        
+        
+    }
+    #slideshow{
+        height: 300px;
+    } 
+    #indicadores{
+        bottom: 10px;
+       
+   }
+   .circles {
+       border: white 1px solid;
+       width: 15px;
+       height: 15px;
+       
+   }
+    .secciones-servicios{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .cartas-servicios-contenido{
+        width: 60%;
+    }
+    .cartas-servicios p{
+        font-size: 15px;
+        
+    }
+    .cartas-servicios h3{
+        font-size: 16px;
+    }
+   
+    .informacion{
+    
+       grid-template-columns: 1fr;
+        
+    
+    }
+    .info-carta h3{
+        font-family: 'Dancing Script';
+        font-size: 30px;
+        color: #E6007E;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+        
+    }
+    .info-carta h4{
+        font-family: 'Dancing Script' ;
+        font-weight: 700;
+        font-size: 15px;
+        
+    }
+    .horario p{
+        font-family: 'Dancing Script' ;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .turno p{
+        font-size: 15px;
+       
+    }
+.info-carta{
+        line-height: 1.2;
+    }
+        
+.info-carta img{
+    width: 60%;
+            
+}
+.medios-pago img{
+    width: 60%;
+}
+.turno img{
+    width: 60%;
+}
+.turno p{
+    align-items: center;
+}
+.map{
+    width:100%;
+    height: 230px;
+    
+}
+/*links redes sociales*/
+.redes-flotantes{
+        height: 100%;
+        justify-content: center;
+    }
+    #social{
+        position: static;
+    }
+    
+        
+    #iconos_sociales {
+        display: flex;
+        justify-content: center;
+       margin: 0;
+    }
+    
+    
+    #social a{
+        display: flex;
+        width: 80px;
+        margin: 0px;
+        
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        
+    }
+}
